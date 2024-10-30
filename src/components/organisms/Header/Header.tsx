@@ -1,4 +1,4 @@
-import ButtonIcon from '../atoms/ButtonIcon';
+import ButtonIcon from "../../atoms/ButtonIcon";
 
 interface HeaderProps {
     toggleMenu: () => void;

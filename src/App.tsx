@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useState } from 'react';
-import Header from './components/organisms/Header';
-import SideMenu from './components/molecules/SideMenu';
+import SideMenu from './components/molecules/SideMenu/SideMenu';
 import MonitoringPage from './pages/MonitoringPage';
 import CallHistoryPage from './pages/CallHistoryPage';
 import RecordingsPage from './pages/RecordingsPage';
+import Header from './components/organisms/Header/Header';
 
 function App() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
