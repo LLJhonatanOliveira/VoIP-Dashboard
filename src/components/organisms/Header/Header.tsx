@@ -6,9 +6,9 @@ interface HeaderProps {
 
 function Header({ toggleMenu }: HeaderProps) {
     return (
-        <header className="flex items-center justify-between p-4 bg-gray-800 text-white shadow-md">
+        <header className="flex items-center p-4 bg-gray-800 text-white shadow-md">
             <ButtonIcon onClick={toggleMenu} icon="☰" />
-            <h1 className="text-lg font-bold">VoIP Dashboard</h1>
+            <h1 className="text-lg ml-3 font-bold">VoIP Dashboard</h1>
         </header>
     );
 }
