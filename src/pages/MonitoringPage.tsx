@@ -32,8 +32,8 @@ const MonitoringPage = () => {
   ];
 
   return (
-    <>
-      <div className="text-lg font-bold mb-4">Monitoramento de Ramais</div>
+    <div className="p-4">
+      <h2 className="text-2xl mb-4">Monitoramento de Ramais</h2>
       <div className="flex">
       <div className="flex-1 p-4" >
         <p className="font-semibold mb-2">Suporte</p>
@@ -80,7 +80,7 @@ const MonitoringPage = () => {
         ))}
       </div>
       </div>
-    </>
+    </div>
   );
 };
 
