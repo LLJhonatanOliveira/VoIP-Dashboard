@@ -25,8 +25,8 @@ The project follows an Atomic Design architecture to organize components:
 1. Clone the repository:
 
 ```
-git clone https://github.com/your-username/voip-management-dashboard.git
-cd voip-management-dashboard
+git clone https://github.com/LLJhonatanOliveira/VoIP-Dashboard.git
+cd VoIP-Dashboard
 ```
 2. Install dependencies:
 
