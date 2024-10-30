@@ -1,50 +1,58 @@
-# React + TypeScript + Vite
+# VoIP Management Dashboard
+This project is a VoIP Management Dashboard developed to monitor and visualize data for phone extensions and call history. Created as part of a capstone project, the system aims to facilitate VoIP telephony management by using modern tools and design practices to build a dynamic, responsive interface.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## What is VoIP?
+VoIP (Voice over Internet Protocol) is a technology that allows telephone calls over the internet by converting voice signals into digital data packets. Widely used in corporate communication systems, VoIP is a more cost-effective and versatile alternative to traditional phone calls and offers additional functionalities, such as recording and integration with digital platforms.
 
-Currently, two official plugins are available:
+## Technologies Used
+### Frontend
+- React: JavaScript library for building user interfaces.
+- TypeScript: A JavaScript superset that adds static types and enhances code scalability.
+- TailwindCSS: Utility-first CSS framework for fast, flexible styling.
+- DaisyUI: UI component library for TailwindCSS, providing pre-styled components to improve appearance and user experience.
+- Storybook: Development tool for building, documenting, and testing components in isolation.
+### Project Structure
+The project follows an Atomic Design architecture to organize components:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Atoms: Basic components, like buttons and text fields.
+- Molecules: Simple combinations of atoms, such as extension cards.
+- Organisms: Complex components that make up entire sections of the interface, like tables and search forms.
 
-## Expanding the ESLint configuration
+## How to Run the Project
+### Prerequisites
+- Node.js (>=14) and npm (or yarn) installed on your machine.
+### Installation and Execution Steps
+1. Clone the repository:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+```
+git clone https://github.com/your-username/voip-management-dashboard.git
+cd voip-management-dashboard
+```
+2. Install dependencies:
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```
+npm install
+# or
+yarn install
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+3. Run the project:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
 ```
+npm run dev
+# or
+yarn dev
+```
+
+The project will be available at http://localhost:3000.
+
+### Running Storybook
+To view and test components in isolation using Storybook:
+
+```
+npm run storybook
+# or
+yarn storybook
+```
+
+Storybook will open at http://localhost:6006.
